@@ -8,9 +8,9 @@ Jeff Leek, PhD.
 Brian Caffo, PhD.  
 
 Libros de referencia:  
-1. R Programming for Data Science, Roger D. Peng.
-2. The Art of Data Science, Roger D. Peng and Elizabeth Matsui.
-3. El arte de programar en R: un lenguaje para la estadística, Julio Sergio Santana - Efraín Mateos Farfán.
+1. **R Programming for Data Science**, Roger D. Peng.
+2. **The Art of Data Science**, Roger D. Peng and Elizabeth Matsui.
+3. **El arte de programar en R**: un lenguaje para la estadística, Julio Sergio Santana - Efraín Mateos Farfán.
 
 | Unidad | Programa | Repositorio |
 | :----: | :----: | :----: |
