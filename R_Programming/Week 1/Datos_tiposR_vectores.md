@@ -53,3 +53,11 @@ Otra manera de crear un vector es a partir de un archivo de texto. Si tenemos un
 ```
 
 Ahora a partir de esos datos creamos un vector. Para eso se usa la ***función scan()***:
+
+```R
+vec <- scan("Vec.txt")
+print(vec)
+```
+Sol:  
+[1] 12.0000 15.5000  3.1000 -2.2000  0.0000  0.0007  
+
