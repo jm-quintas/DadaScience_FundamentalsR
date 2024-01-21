@@ -54,3 +54,15 @@ Sol: 23
 z <- 23L; print(class(z))
 ```
 Sol: "integer"  
+
+Para lograr que una expresión, como la operación de división 6/2, arroje como resultado un entero, se tiene que hacer una **conversión; ello se logra mediante la función as.integer**, como sigue:
+
+```R
+x <- as.integer(6/2); print(x)
+```
+Sol: 3  
+
+```R
+x <- as.integer(6/2); print(class(x))
+```
+Sol: "integer"  
