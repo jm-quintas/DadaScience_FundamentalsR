@@ -111,13 +111,15 @@ También, existe un valor numérico especial, Inf, que representa el infinito y 
 i <- 1/0
 print(i)
 ```
-Sol: Inf  
+Sol:  
+[1] Inf  
 
 ```R
 n <- 1/Inf
 print(n)
 ```
-Sol: 0  
+Sol:  
+[1] 0  
 
 Finalmente, algunas operaciones pueden resultar en algo que no es un número, esto se representa por el valor NaN.
 
@@ -125,5 +127,7 @@ Finalmente, algunas operaciones pueden resultar en algo que no es un número, es
 x <- 0/0
 print(x)
 ```
-Sol: NaN  
+Sol:  
+[1] NaN  
+
 
