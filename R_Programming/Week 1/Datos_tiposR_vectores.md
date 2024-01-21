@@ -40,3 +40,6 @@ Sol:
 [1]  4  2 -8   
 [1]  4  2 -8  
 
+La ***función c()*** sirve para concatenar varios elementos del mismo tipo. En todos los ejemplos mostrados, la impresión del vector se hace en un renglón que comienza con el símbolo ***[1]***, indicando con ello que el primer elemento del renglón corresponde al primer elemento del vector.  
+
+Un caso muy particular de asignación, es el de la ***función assign()***. A diferencia de los otros casos vistos en el ejemplo anterior, el nombre de la variable aparece entre comillas.
