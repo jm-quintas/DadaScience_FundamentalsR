@@ -67,7 +67,18 @@ x <- as.integer(6/2); print(class(x))
 ```
 Sol: "integer"  
 
-Por su parte, los números complejos, **complex en el lenguaje**, tienen una sintaxis muy particular; misma que se tiene que emplear para indicar explícitamente que un número introducido corresponde a ese tipo:  
+Las funciones de conversión más comunes en R son las siguientes:  
+
+| Función | Descripción |
+| as.character() | convierte un objeto a un objeto de tipo carácter |
+| as.numeric() | Convierte un objeto a un objeto de tipo numérico |
+| as.logical() | convierte un objeto a un objeto de tipo lógico |
+| as.integer() | convierte un objeto a un objeto de tipo entero |
+| as.complex() | convierte un objeto a un objeto de tipo complejo |
+| as.Date() | convierte un objeto a un objeto de tipo fecha |
+| as.POSIXct() | convierte un objeto a un objeto de tipo fecha/hora |
+
+Por otra parte, los números complejos, **complex en el lenguaje**, tienen una sintaxis muy particular; misma que se tiene que emplear para indicar explícitamente que un número introducido corresponde a ese tipo:  
 
 ```R
 x <- 21 + 2i
