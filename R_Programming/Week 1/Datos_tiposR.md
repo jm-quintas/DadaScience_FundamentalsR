@@ -19,7 +19,8 @@ x <- 1
 # Se imprime el valor de x.
 print(x)
 ```
-Sol: 1  
+Sol:
+[1] 1  
 
 ```R
 # Se asigna el valor 2 a x.
@@ -27,45 +28,52 @@ x <- 1
 # Se imprime la clase de dato.
 print(class(x))
 ```
-Sol: "numeric"  
+Sol:
+[1] "numeric"  
 
 ```R
 # Asignamos la operacion de dividir a y.
 y <- 6/2 
 print(y)
 ```
-Sol: 3
+Sol:
+[1] 3  
 
 ```R
 # Asignamos la operacion de dividir a y.
 y <- 6/2 
 print(class(y))
 ```
-Sol: "numeric"  
+Sol:
+[1] "numeric"  
 
 Para asignar explícitamente un entero, **integer**, a una variable, se agrega la letra L al final del número, como sigue:  
 
 ```R
 z <- 23L; print(z)
 ```
-Sol: 23
+Sol:
+[1] 23  
 
 ```R
 z <- 23L; print(class(z))
 ```
-Sol: "integer"  
+Sol:
+[1] "integer"  
 
 Para lograr que una expresión, como la operación de división 6/2, arroje como resultado un entero, se tiene que hacer una **conversión; ello se logra mediante la función as.integer**, como sigue:
 
 ```R
 x <- as.integer(6/2); print(x)
 ```
-Sol: 3  
+Sol:
+[1] 3  
 
 ```R
 x <- as.integer(6/2); print(class(x))
 ```
-Sol: "integer"  
+Sol:
+[1] "integer"  
 
 Las funciones de conversión más comunes en R son las siguientes:  
 
