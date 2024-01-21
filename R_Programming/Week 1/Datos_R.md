@@ -66,3 +66,24 @@ Sol: 3
 x <- as.integer(6/2); print(class(x))
 ```
 Sol: "integer"  
+
+Por su parte, los números complejos, **complex en el lenguaje**, tienen una sintaxis muy particular; misma que se tiene que emplear para indicar explícitamente que un número introducido corresponde a ese tipo:  
+
+```R
+x <- 21 + 2i
+y <- 2i + 21
+z <- -1 + 0i
+
+tt <- sqrt(z)
+
+print(x); print(y); print(z); print(tt); print(class(tt))
+```
+Sol:  
+21+2i  
+21+2i  
+-1+0i  
+0+1i  
+"complex"  
+
+
+
