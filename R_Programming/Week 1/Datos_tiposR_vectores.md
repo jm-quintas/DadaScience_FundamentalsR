@@ -45,7 +45,7 @@ La ***función c()*** sirve para concatenar varios elementos del mismo tipo. En 
 Un caso muy particular de asignación, es el de la ***función assign()***. A diferencia de los otros casos vistos en el ejemplo anterior, el nombre de la variable aparece entre comillas.
 
 ## Creación de vectores a partir de archivos de texto - la función scan().
-Otra manera de crear un vector es a partir de un archivo de texto. Si tenemos un archivo *UnVec.txt* que contiene la siguiente información:
+Otra manera de crear un vector es a partir de un archivo de texto. Si tenemos un archivo *Vec.txt* que contiene la siguiente información:
 
 ```
 12 15.5 3.1
