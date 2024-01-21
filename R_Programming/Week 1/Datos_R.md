@@ -70,6 +70,7 @@ Sol: "integer"
 Las funciones de conversión más comunes en R son las siguientes:  
 
 | Función | Descripción |
+| :----: | :----: |
 | as.character() | convierte un objeto a un objeto de tipo carácter |
 | as.numeric() | Convierte un objeto a un objeto de tipo numérico |
 | as.logical() | convierte un objeto a un objeto de tipo lógico |
