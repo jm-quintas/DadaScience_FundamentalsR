@@ -99,11 +99,11 @@ tt <- sqrt(z)
 print(x); print(y); print(z); print(tt); print(class(tt))
 ```
 Sol:  
-21+2i  
-21+2i  
--1+0i  
-0+1i  
-"complex"  
+[1] 21+2i  
+[1] 21+2i  
+[1] -1+0i  
+[1] 0+1i  
+[1] "complex"  
 
 También, existe un valor numérico especial, Inf, que representa el infinito y que puede resultar en algunas expresiones.
 
