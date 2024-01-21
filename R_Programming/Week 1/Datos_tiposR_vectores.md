@@ -7,4 +7,4 @@ x <- 2; print(x)
 Sol:  
 [1] 2  
 
-Aquí, la impresión del valor de x tiene una forma muy particular: [1] 2. El [1] que precede al valor, indica que se trata del primer elemento y único, en este caso, del vector que se muestra.
+Aquí, la impresión del valor de x tiene una forma muy particular: *[1] 2*. El *[1]* que precede al valor, indica que se trata del primer elemento y único, en este caso, del vector que se muestra.
