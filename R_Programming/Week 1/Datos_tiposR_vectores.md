@@ -71,4 +71,13 @@ write(vv, "OtroArchivo.txt")
 print(vv)
 ```
 Sol:  
-5.0  6.6 -7.7  
+[1] 5.0  6.6 -7.7  
+
+Ahora recuperamos el contenido del archivo.  
+
+```R
+v1 <- scan("OtroArchivo.txt")
+print(v1)
+```
+Sol:  
+[1]  5.0  6.6 -7.7  
