@@ -61,3 +61,14 @@ print(vec)
 Sol:  
 [1] 12.0000 15.5000  3.1000 -2.2000  0.0000  0.0007  
 
+La función inversa, en este caso, de la función scan(), es la ***función write***. Así, un vector cualquiera fácilmente se puede escribir en un archivo de texto.
+
+```R
+# Creamos una variable y le asignamos un vector:
+vv <- c(5, 6.6, -7.7)
+# Escribir la información almacenada en la variable vv en un archivo creado con el nombre "OtroArchivo.txt":
+write(vv, "OtroArchivo.txt")
+print(vv)
+```
+Sol:  
+5.0  6.6 -7.7  
