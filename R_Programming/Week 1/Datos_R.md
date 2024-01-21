@@ -110,4 +110,11 @@ print(n)
 ```
 Sol: 0  
 
+Finalmente, algunas operaciones pueden resultar en algo que no es un número, esto se representa por el valor NaN.
+
+```R
+x <- 0/0
+print(x)
+```
+Sol: NaN  
 
