@@ -21,13 +21,22 @@ Sol:
 Distintas formas de asignar un vector a una variable:  
 
 ```python
-# Asignación de un vector a una variable:
-v <- c(4, 2, -8)
-c(4, 2, -8) -> v
-# Usando la función assign:
-assign("v", c(4, 2, -8))
-# Salida:
-print(v)
+# Asignación de un vector a una variable, utilizando los operadores <- y ->:
+v1 <- c(4, 2, -8)
+c(4, 2, -8) -> v2
+
+# Usando la función assign para definir un vector:
+assign("v3", c(4, 2, -8))
+
+# Utilizar el operador = para generar la asignación:
+v4 = c(4, 2, -8)
+
+# Salidas:
+print(v1); print(v2); print(v3); print(v4)
 ```
 Sol:  
 [1]  4  2 -8  
+[1]  4  2 -8  
+[1]  4  2 -8   
+[1]  4  2 -8  
+
