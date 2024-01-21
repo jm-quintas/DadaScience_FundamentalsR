@@ -28,3 +28,19 @@ x <- 1
 print(class(x))
 ```
 Sol: "numeric"  
+
+```R
+# Asignamos la operacion de dividir a y.
+y <- 6/2 
+print(y)
+```
+Sol: 3
+
+```R
+# Asignamos la operacion de dividir a y.
+y <- 6/2 
+print(class(y))
+```
+Sol: "numeric"  
+
+
