@@ -43,4 +43,14 @@ print(class(y))
 ```
 Sol: "numeric"  
 
+Para asignar explícitamente un entero, **integer**, a una variable, se agrega la letra L al final del número, como sigue:  
 
+```R
+z <- 23L; print(z)
+```
+Sol: 23
+
+```R
+z <- 23L; print(class(z))
+```
+Sol: "integer"  
