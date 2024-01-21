@@ -85,5 +85,18 @@ Sol:
 0+1i  
 "complex"  
 
+También, existe un valor numérico especial, Inf, que representa el infinito y que puede resultar en algunas expresiones.
+
+```R
+i <- 1/0
+print(i)
+```
+Sol: Inf  
+
+```R
+n <- 1/Inf
+print(n)
+```
+Sol: 0  
 
 
