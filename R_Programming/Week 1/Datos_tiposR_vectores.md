@@ -153,3 +153,13 @@ print(w)
 ```
 Sol:  
 [1] 3 4 5 5 4 3  
+
+# Acceso a los elementos individuales de un vector.
+Dentro de un vector, sus elementos se pueden identificar mediante un índice entero, que en el caso de este lenguaje empieza con el 1.
+
+```R
+v <- c(2, 4, 6, 8, 10)
+print(v[5])
+```
+Sol:  
+[1] 10  
