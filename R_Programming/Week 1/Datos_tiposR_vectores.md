@@ -325,3 +325,73 @@ El resultado es un vector de lógicos, de la misma longitud que el original y pa
 | == | Igual a |
 | != | Distinto a |
 
+**Pregunta importante**: ¿qué pasa cuando los vectores operandos no son de la misma longitud? En esos casos, el intérprete del lenguaje procede a completar la operación reciclando los elementos del operador de menor longitud.
+
+```R
+vect <- c(4, 5, 6, 7, 8, 9, 10) * c(1, 2)
+
+# Warning message:
+# In c(4, 5, 6, 7, 8, 9, 10) * c(1, 2) :
+  # longitud de objeto mayor no es múltiplo de la longitud de uno menor
+
+print(vect)
+```
+Sol:  
+[1]  4 10  6 14  8 18 10  
+
+Es lo mismo que:
+
+```R
+vect2 <- c(4, 5, 6, 7, 8, 9, 10) * c(1, 2, 1, 2, 1, 2, 1)
+print(vect2)
+```
+Sol:  
+[1]  4 10  6 14  8 18 10  
+
+En el primer caso el sistema ha arrojado un mensaje de advertencia, **Warning**, indicando la diferencia en las longitudes de los operandos. La eliminación de estos mensajes se hace por medio de la función ***options()***, como sigue:
+
+```R
+options(warn = -1)
+vect <- c(4, 5, 6, 7, 8, 9, 10) * c(1, 2)
+print(vect)
+```
+Sol:  
+[1]  4 10  6 14  8 18 10  
+
+Es esta funcionalidad la que permite hacer de manera muy simple algunas operaciones vectoriales,
+
+```R
+vector <- c(2, -3, 4)
+# Dos veces el cuadrado de v:
+vector2 <- 2 * (vector^2)
+print(vector2)
+```
+Sol:  
+[1]  8 18 32  
+
+Algunas funciones pueden recibir como argumento un vector y producir a su salida un vector de la misma longitud que el de entrada. Tal es el caso de las funciones trigonométricas como ***sin()***, ***cos()***, y la raíz cuadrada: ***sqrt()***.
+
+```R
+v <- c(9, 8, 25)
+print(sqrt(v))
+```
+Sol:  
+[1] 3.000000 2.828427 5.000000  
+
+```R
+# El sin de 30, 45 y 60 grados.
+# Primero se hace la conversión a radianes:
+angulos <- c(30, 45, 60) * (pi/180)
+print(angulos)
+```
+Sol:  
+[1] 0.5235988 0.7853982 1.0471976  
+
+```R
+# Calculamos el seno:
+senos <- sin(angulos)
+print(senos)
+```
+Sol:  
+[1] 0.5000000 0.7071068 0.8660254  
+
