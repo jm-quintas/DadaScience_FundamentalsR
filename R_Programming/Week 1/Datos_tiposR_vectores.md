@@ -81,3 +81,32 @@ print(v1)
 ```
 Sol:  
 [1]  5.0  6.6 -7.7  
+
+## Creación de vectores a partir de secuencias y otros patrones.
+El operador : permite generar un vector entero a partir de una secuencia creciente o decreciente de enteros.
+
+```R
+x <- 1:5
+print(x)
+```
+Sol:  
+[1] 1 2 3 4 5  
+
+```R
+y <- 5:1
+print(y)
+print(class(y))
+```
+Sol:  
+[1] 5 4 3 2 1  
+[1] "integer"  
+
+El alcance del operador : no se limita solo a números enteros.  
+
+```R
+v <- pi:6
+print(v)
+```
+Sol:  
+[1] 3.141593 4.141593 5.141593  
+[1] "numeric"  
