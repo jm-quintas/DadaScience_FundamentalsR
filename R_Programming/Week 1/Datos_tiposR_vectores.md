@@ -481,4 +481,4 @@ Sol:
 print(plot(las.x, las.y, col = "red")
 ```
 Sol:  
-
+![](https://github.com/jm-quintas/DadaScience_FundamentalsR/blob/main/R_Programming/Week%201/trayectoriaProyectil.png)
