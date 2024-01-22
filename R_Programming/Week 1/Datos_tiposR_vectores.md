@@ -125,6 +125,7 @@ Sol:
 En seguida se muestra sólo otra forma bastante común de utilizar esta función, que tiene que ver con la producción de un vector o una secuencia de una longitud determinada.
 
 ```R
+# Secuencia de 8 números iniciando desde 4 y de 2 en 2.
 v <- seq(from = 4, by = 2, length.out = 8)
 print(v)
 ```
