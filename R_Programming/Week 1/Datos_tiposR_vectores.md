@@ -141,3 +141,15 @@ print(v2)
 ```
 Sol:  
 [1]  4  8 -3  4  8 -3  4  8 -3  4  8 -3  4  8 -3    
+
+Finalmente, aveces se requiere construir un vector a partir de dos o más vectores ya existentes. La forma simple de lograr esto es con la ***función c()*** como se muestra a continuación:
+
+```R
+u <- c(3, 4, 5)
+p <- c(5, 4, 3)
+w <- c(u, p)
+
+print(w)
+```
+Sol:  
+[1] 3 4 5 5 4 3  
