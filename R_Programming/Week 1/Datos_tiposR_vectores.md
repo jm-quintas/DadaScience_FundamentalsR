@@ -188,3 +188,69 @@ print(v1)
 ```
 Sol:  
 [1] 12  4  6  8 10  
+
+Esta misma operación puede hacer crecer un vector. Por ejemplo, el vector v tiene 5 elementos. Si se asigna un valor al elemento 8, el vector crecerá hasta esa longitud.
+
+```R
+v1 <- c(2, 4, 6, 8, 10)
+v1[8] <- 20
+print(v1)
+```
+Sol:  
+[1] 12  4  6  8 10 NA NA 20    
+
+Para aumentar el vector a esa longitud se tuvieron que introducir elementos ausentes o vacíos que se indican con el valor NA (del inglés: Not Available) en los espacios correspondientes.  
+
+Otra característica interesante de este lenguaje, es que permite dar nombre y acceder por medio de ese nombre a los elementos individuales de un vector.  
+
+```R
+frutas <- c(15, 20, 25, 30)
+print(frutas)
+```
+Sol:  
+[1] 15 20 25 30  
+
+Ahora asociamos esos valores con el nombre de la fruta correspondiente:
+
+```R
+frutas <- c(15, 20, 25, 30)
+names(frutas) <- c("Manzanas", "Peras", "Fresas", "Mangos")
+print(frutas)
+```
+Sol:  
+Manzanas    Peras   Fresas   Mangos  
+   15        20       25      30  
+
+Otra manera más directa de nombrar los elementos de un vector, es en el momento mismo de la creación con la función c().
+
+```R
+frutas <- c(Manzanas = 15, Peras = 20, Fresas = 25, Mangos = 30)
+print(frutas)
+```
+Sol:  
+Manzanas    Peras   Fresas   Mangos   
+    15       20       25       30  
+
+Se puede acceder a los elementos individuales del vector mediante su nombre.
+
+```R
+frutas <- c(Manzanas = 15, Peras = 20, Fresas = 25, Mangos = 30)
+print(frutas["Peras"])
+```
+Sol:  
+Peras  
+ 20  
+
+El acceso a través de índices se sigue permitiendo:
+
+```R
+frutas <- c(Manzanas = 15, Peras = 20, Fresas = 25, Mangos = 30)
+print(frutas[1])
+```
+Sol:  
+Manzanas  
+  15  
+
+
+
+
