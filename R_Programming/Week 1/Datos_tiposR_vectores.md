@@ -105,7 +105,7 @@ El alcance del operador : no se limita solo a números enteros.
 
 ```R
 v <- pi:6
-print(v)
+print(v); print(class(v))
 ```
 Sol:  
 [1] 3.141593 4.141593 5.141593  
