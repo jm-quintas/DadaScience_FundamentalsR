@@ -301,3 +301,27 @@ Sol:
 
 Sol:  
 [1] 32  
+
+Ilustremos el uso de las operaciones lógicas.
+
+```R
+u <- 2:10
+b <- c(3, 4, 5)
+w <- c(u, b)
+print(w <= 10)
+```
+Sol:  
+[1]  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE  
+[13] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE  
+[25] FALSE FALSE FALSE FALSE FALSE  TRUE  TRUE  TRUE  
+
+El resultado es un vector de lógicos, de la misma longitud que el original y paralelo a ese, en el que se indica, elemento a elemento cuál es el resultado de la prueba lógica: “menor o igual que diez”.  
+
+### Operadores lógicos.
+| Símbolo | Descripción |
+| :-----: | :-----: |
+| < | Menor que |
+| > | Mayor que |
+| == | Igual a |
+| != | Distinto a |
+
