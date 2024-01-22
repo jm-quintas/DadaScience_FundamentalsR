@@ -159,7 +159,22 @@ Dentro de un vector, sus elementos se pueden identificar mediante un índice ent
 
 ```R
 v <- c(2, 4, 6, 8, 10)
-print(v[5])
+print(v[1]); print(v[3]); print(v[5])
 ```
 Sol:  
+[1] 2  
+[1] 6  
 [1] 10  
+
+También, podemos realizar operaciones aritmética con los índices:
+
+```R
+v1 <- c(2, 4, 6, 8, 10)
+# La suma del primer y segundo elementos de v
+vs = v1[1] + v1[3]
+# Salida:
+print(vs)
+```
+Sol:  
+[1] 8  
+
