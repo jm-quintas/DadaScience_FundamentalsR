@@ -402,6 +402,6 @@ De un edificio, a una **altura de 15 m**, se ha lanzado con un **ángulo de 50 g
 Las ecuaciones que gobiernan este fenómeno son las siguientes:  
 
 ```
-               x = v0xt + x0
-               y = (−1/2)gt2 + v0yt + y0
+                                                x = v0xt + x0
+                                          y = (−1/2)gt2 + v0yt + y0
 ```
