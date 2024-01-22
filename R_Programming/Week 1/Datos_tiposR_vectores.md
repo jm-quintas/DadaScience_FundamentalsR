@@ -122,4 +122,12 @@ Sol:
 [1]  5  7  9 11 13 15  
 [1] "numeric"  
 
+En seguida se muestra sólo otra forma bastante común de utilizar esta función, que tiene que ver con la producción de un vector o una secuencia de una longitud determinada.
+
+```R
+v <- seq(from = 4, by = 2, length.out = 8)
+print(v)
 ```
+Sol:  
+[1]  4  6  8 10 12 14 16 18  
+
