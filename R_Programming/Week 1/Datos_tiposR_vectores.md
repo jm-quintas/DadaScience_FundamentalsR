@@ -178,3 +178,13 @@ print(vs)
 Sol:  
 [1] 8  
 
+El acceso a los elementos individuales de un vector no solamente es para ***consulta o lectura***, sino también para su ***modificación o escritura***.
+
+```R
+v1 <- c(2, 4, 6, 8, 10)
+# Modificamos el primer índice del vector, con la suma de 2 índices:
+v1[1] <- v1[2] + v1[4]
+print(v1)
+```
+Sol:  
+[1] 12  4  6  8 10  
