@@ -110,3 +110,16 @@ print(v); print(class(v))
 Sol:  
 [1] 3.141593 4.141593 5.141593  
 [1] "numeric"  
+
+En este caso, pi simboliza el valor de la constante matemática π aproximadamente igual a 3.1416, y la secuencia de números reales que se produce es con incrementos de 1 a ese valor hasta mientras que no se rebase el límite superior, 6, en este caso. Por otra parte, la función ***seq()*** permite generar una mayor variedad de secuencias numéricas.
+
+```R
+v <- seq(from = 5, to = 15, by = 2)
+# Secuencia desde 5 hasta 15 de 2 en 2
+print(v); print(class(v))
+```
+Sol:  
+[1]  5  7  9 11 13 15  
+[1] "numeric"  
+
+```
