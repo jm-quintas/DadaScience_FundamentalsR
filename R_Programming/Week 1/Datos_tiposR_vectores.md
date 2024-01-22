@@ -132,3 +132,12 @@ print(v)
 Sol:  
 [1]  4  6  8 10 12 14 16 18  
 
+Algunas veces es necesario repetir una secuencia de números varias veces para generar un vector deseado. La ***función rep()*** sirve para ese propósito.
+
+```R
+v <- c(4, 8, -3)
+v2 <- rep(v, times = 5)
+print(v2)
+```
+Sol:  
+[1]  4  8 -3  4  8 -3  4  8 -3  4  8 -3  4  8 -3    
