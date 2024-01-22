@@ -251,6 +251,53 @@ Sol:
 Manzanas  
   15  
 
+## Operaciones sencillas con vectores.
+Las operaciones aritméticas más comunes están definidas para vectores: la suma, la resta, la división y la exponenciación, todas ellas se definen elemento a elemento entre dos vectores.
 
+```R
+# Resulta en un vector de longitud 1.
+v <- 2 + 3
+print(v)
+```
+Sol:  
+[1] 5  
 
+```R
+# Resulta en un vector de longitud 2.
+v <- c(1, 2) - c(5, 1)
+print(v)
+```
+Sol:  
+[1] -4  1  
 
+```R
+# Resulta en un vector de longitud 3.
+v <- c(2, 3, 4) * c(2, 1, 3)
+print(v)
+```
+Sol:  
+[1]  4  3 12  
+
+```R
+# Eleva a potencias 3,2,1.
+v <- c(2, 3, 4)^(3:1)
+print(v)
+```
+Sol:  
+[1] 8 9 4  
+
+En muchas ocasiones es necesario saber la longitud de una vector. La función ***length()*** aplicada a un vector regresa precisamente ese valor:
+
+```R
+u <- 2:10
+b <- c(3, 4, 5)
+w <- c(u, b)
+print(w)
+print(length(w))
+```
+Sol:  
+[1]  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26  
+[26] 27 28 29 30  3  4  5  
+
+Sol:  
+[1] 32  
