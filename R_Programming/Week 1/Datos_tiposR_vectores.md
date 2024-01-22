@@ -406,3 +406,79 @@ Las ecuaciones que gobiernan este fenómeno son las siguientes:
                                           y = (−1/2)gt^2 + v0yt + y0
 ```
 
+***Constantes***:
+```R
+g <- 9.81
+xo <- 0
+yo <- 15
+vi <- 7
+alphaD <- 50
+```
+
+***Componente x de la velocidad***:
+```R
+alpha <- (pi/180)*alphaD
+vox <- vi * cos(alpha)
+print(vox)
+```
+Sol:  
+[1] 4.499513  
+
+***Componente y de la velocidad***:
+```R
+voy <- vi *sin(alpha)
+print(voy)
+```
+Sol:  
+[1] 5.362311  
+
+***Distancia horizontal***:
+```R
+ las.x <- seq(from = 0, to = 11, by = 0.5)
+```
+
+La secuencia de valores de x se ha guardado en una variable de nombre “las.x”.
+
+En las fórmulas que gobiernan el fenómeno, dadas anteriormente, no se tiene ***y*** en función de ***x***, sino que las dos coordenadas dependen del parámetro ***t***, esto es, del tiempo. Para resolver este asunto simplemente se despeja el parámetro ***t***, en la ecuación de ***x***:
+
+```
+                           t = (x - xo)/vox
+```
+
+Obtenemos los valores de ***t*** correspondientes a las ***x***:
+
+```R
+las.t <- (las.x - xo)/vox
+```
+
+Finalmente, encontramos las y correspondientes a las t, justamente encontradas, aplicando la fórmula para y:  
+
+```R
+las.y <- -(g/2) * las.t^2 + voy * las.t + yo
+```
+
+***Resultados***:
+
+```R
+print(las.x)
+```
+Sol:  
+[1]  0.0  0.5  1.0  1.5  2.0  2.5  3.0  3.5  4.0  4.5  5.0  5.5  6.0  6.5  7.0  
+[16]  7.5  8.0  8.5  9.0  9.5 10.0 10.5 11.0  
+
+```R
+print(las.y)
+```
+Sol:  
+[1] 15.0000000 15.5353081 15.9494790 16.2425125 16.4144087 16.4651675  
+[7] 16.3947891 16.2032734 15.8906203 15.4568299 14.9019022 14.2258372  
+[13] 13.4286349 12.5102953 11.4708183 10.3102040  9.0284524  7.6255636  
+[19]  6.1015373  4.4563738  2.6900730  0.8026348 -1.2059407  
+
+***Gráfico***:
+
+```R
+print(plot(las.x, las.y, col = "red")
+```
+Sol:  
+
