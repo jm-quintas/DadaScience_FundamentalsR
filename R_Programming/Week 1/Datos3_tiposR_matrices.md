@@ -111,12 +111,13 @@ colnames(m)<- c("UNO", "DOS", "TRES", "CUATRO")
 print(m)
 ```
 Sol:  
-       UNO DOS TRES CUATRO  
-uno     11  12   13     14  
-dos     15  16   17     18  
-tres    19  20   21     22  
-cuatro  23  24   25     26  
-cinco   27  28   29     30  
+| _____ | UNO | DOS | TRES | CUATRO |
+| :---: | :--: | :--: | :--: | :--: |
+| uno | 11 | 12 | 13 | 14 |
+| dos | 15 | 16 | 17 | 18 |
+| tres | 19 | 20 | 21 | 22 |
+| cuatro | 23 | 24 | 25 | 26 |
+| cinco | 27 | 28 | 29 | 30 |
 
 ```R
 # Consultamos los nombres de las columnas:
