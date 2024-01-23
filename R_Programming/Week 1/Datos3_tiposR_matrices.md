@@ -163,3 +163,67 @@ Sol:
 | Fila1 | 1.5 | 0.0 |
 | Fila2 | 3.2 | 1.1 |
 | Fila3 | -5.5 | 70.0 |
+
+## Acceso a los elementos individuales de una matriz.
+El lenguaje también provee de mecanismos para acceder a los elementos individuales de una matriz. Para ello se emplea el operador [].
+
+```R
+print(m[2,1])
+```
+Sol:  
+[1] 15  
+
+## Operaciones sencillas con matrices.
+las operaciones aritméticas válidas para vectores, son validas para las matrices, siempre y cuando, las matrices operando tengan las mismas dimensiones y se aplican elemento a elemento. 
+
+```R
+m <- matrix(1:6, nrow = 2, ncol = 3)
+mm <- rbind(1:3, 3:1)
+print(m)
+print(mm)
+```
+Sol:  
+| _____ | Col1 | Col2 | Col3 |
+| :---: | :--: | :--: | :--: |
+| Fila1 | 1 | 3 | 5 |
+| Fila2 | 2 | 4 | 6 |
+
+| _____ | Col1 | Col2 | Col3 |
+| :---: | :--: | :--: | :--: |
+| Fila1 | 1 | 2 | 3 |
+| Fila2 | 3 | 2 | 1 |
+
+Aplicando la operación arítmetica de la suma:  
+
+```R
+print(m + mm)
+```
+Sol:  
+| _____ | Col1 | Col2 | Col3 |
+| :---: | :--: | :--: | :--: |
+| Fila1 | 2 | 5 | 8 |
+| Fila2 | 5 | 6 | 7 |
+
+Aplicando la operación arítmetica de la multiplicación:  
+
+```R
+print(m * mm)
+```
+Sol:  
+| _____ | Col1 | Col2 | Col3 |
+| :---: | :--: | :--: | :--: |
+| Fila1 | 1 | 6 | 15 |
+| Fila2 | 6 | 8 | 6 |
+
+Aplicando la traspuesta a una matriz:
+
+```R
+print(t(m))
+```
+Sol:  
+| _____ | Col1 | Col2 |
+| :---: | :--: | :--: |
+| Fila1 | 1 | 2 |
+| Fila2 | 3 | 4 |
+| Fila3 | 5 | 6 |
+
