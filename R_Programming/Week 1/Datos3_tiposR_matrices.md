@@ -128,6 +128,6 @@ print(m[ , "DOS"])
 ```
 Sol:  
 uno    dos   tres cuatro  cinco   
-12     16     20     24     28  
+12      16      20      24      28  
 
 
