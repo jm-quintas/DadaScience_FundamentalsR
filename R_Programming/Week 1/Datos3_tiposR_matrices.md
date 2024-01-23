@@ -48,7 +48,6 @@ Sol:
 | Fila4 | 4 | 9 | 14 | 19 |
 | Fila5 | 5 | 10 | 15 | 20 |
 
-
 El elemento en el renglon 3 y columna 2 es:
 
 ```R
@@ -95,12 +94,13 @@ Las matrices también se pueden crear de manera flexible por medio de la funció
 print(m)
 ```
 Sol:  
-     [,1] [,2] [,3] [,4]  
-[1,]   11   12   13   14  
-[2,]   15   16   17   18  
-[3,]   19   20   21   22  
-[4,]   23   24   25   26  
-[5,]   27   28   29   30  
+| _____ | Col1 | Col2 | Col3 | Col4 |
+| :---: | :--: | :--: | :--: | :--: |
+| Fila1 | 11 | 12 | 13 | 14 |
+| Fila2 | 15 | 16 | 17 | 18 |
+| Fila3 | 19 | 20 | 21 | 22 |
+| Fila4 | 23 | 24 | 25 | 26 |
+| Fila5 | 27 | 28 | 29 | 30 |
 
 Adicionalmente, a los ***renglones y las columnas de una matriz se les pueden asignar nombres***, que pueden ser después consultados o usados como índices:
 
