@@ -134,3 +134,32 @@ Sol:
 | uno | dos | tres | cuatro | cinco |
 | :---: | :--: | :--: | :--: | :--: |
 | 12 | 16 | 20 | 24 | 28 |
+
+Las funciones ***rbind()*** y ***cbind()***, son otras que se pueden utilizar para construir matrices, dando, ya sea los renglones individuales o las columnas individuales, respectivamente.  
+
+```R
+m1 <- rbind(c(1.5, 3.2, -5.5), c(1, 1.1, 70))
+print(m1)
+```
+Sol:  
+| _____ | Col1 | Col2 | Col3 |
+| :---: | :--: | :--: | :--: |
+| Fila1 | 1.5 | 3.2 | -5.5 |
+| Fila2 | 1.0 | 1.1 | 70.0 |
+
+```R
+print(class(m1[1, ]))
+```
+Sol:  
+"numeric"  
+
+```R
+m2 <- cbind(c(1.5, 3.2, -5.5), c(0, 1.1, 70))
+print(m2)
+```
+Sol:  
+| _____ | Col1 | Col2 |
+| :---: | :--: | :--: |
+| Fila1 | 1.5 | 0.0 |
+| Fila2 | 3.2 | 1.1 |
+| Fila3 | -5.5 | 70.0 |
