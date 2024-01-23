@@ -1,4 +1,4 @@
-# Datos y sus tipos.
+# Datos y sus tipos. 
 
 Todas las cosas que manipula R se llaman objetos. En general, éstos se construyen a partir de objetos más simples. De esta manera, se llega a los objetos más simples que son de cinco clases a las que se denomina atómicas y que son las siguientes:
 
