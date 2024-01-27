@@ -44,12 +44,12 @@ Sol:
 Los dos vectores anteriores pueden considerarse como una estructura de información, a la que se puede someter a algún tipo de procesamiento estadístico. Consideremos el problema de determinar la frecuencia de aparición de ciertos meses en el vector ***meses_nacimiento***. En este caso, el lenguaje provee de una clase que facilita este tipo de análisis, a saber: ***la clase factor***. Procedemos primero a transformar el vector meses_nacimiento a un ***factor***, mediante la función de conversión ***as.factor()***, como sigue:  
 
 ```R
-fmeses_nacimiento <- as.factor(meses_nacimiento)
-print(fmeses_nacimiento)
+Fmes_nacimiento <- as.factor(mes_nacimiento)
+print(Fmes_nacimiento)
 ```
 Sol:  
-[1] Enero      Febrero    Marzo      Abril      Febrero    Julio      
-[7] Agosto     Septiembre Octubre    Noviembre  Diciembre   
+[1] Dic Feb Oct Mar Feb Nov Abr Dic Feb Oct Dic  
+Levels: Abr Dic Feb Mar Nov Oct  
 
 10 Levels: Abril Agosto Diciembre Enero Febrero Julio Marzo ... Septiembre  
 
@@ -57,13 +57,12 @@ El factor exhibe una estructura adicional denominada ***Levels***, en la que se 
 se puede descubrir:  
 
 ```R
-print(unclass(fmeses_nacimiento))
+print(unclass(Fmes_nacimiento))
 ```
 Sol:  
-[1]  4  5  7  1  5  6  2 10  9  8  3  
+[1] 2 3 6 4 3 5 1 2 3 6 2  
 attr(,"levels")  
-[1] "Abril"      "Agosto"     "Diciembre"  "Enero"      "Febrero"     
-[6] "Julio"      "Marzo"      "Noviembre"  "Octubre"    "Septiembre"  
+[1] "Abr" "Dic" "Feb" "Mar" "Nov" "Oct"  
 
 Como se puede ver, el núcleo de la clase son dos vectores. El primero, es un vector de índices enteros, que sustituye al vector de caracteres original, y el segundo es un vector de caracteres, que contiene los niveles (Levels) o categorías, a los que hace referencia el primer vector.
 
