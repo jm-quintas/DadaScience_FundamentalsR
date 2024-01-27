@@ -3,27 +3,26 @@
 Las ***cadenas de caracteres se utilizan para nombrar cosas u objetos*** del mundo. Igual que en el caso de los números, en R la ***clase character*** no se refiere a una cadena de caracteres aislada sino a un vector que contiene cero o más cadenas de caracteres.  
 
 ```R
-persona <- c("Hugo", "Paco", "Luis", "Jose", "Kavin", "Melissa", "Nicole", "Laurent", "Jasmin", "Jason", "Mickey")
-meses_nacimiento <- c("Enero", "Febrero", "Marzo", "Abril", "Febrero", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
+ persona <- c("Hugo", "Paco", "Luis", "Petra", "Maria", "Fulano", "Sutano", "Perengano", "Metano", "Etano", "Propano")
 
-print(persona); print(meses_nacimiento)
+mes_nacimiento <- c("Dic", "Feb", "Oct", "Mar", "Feb", "Nov", "Abr", "Dic", "Feb", "Oct", "Dic")
+
+print(persona); print(mes_nacimiento)
 ```
 Sol:  
-[1] "Hugo"    "Paco"    "Luis"    "Jose"    "Kavin"   "Melissa" "Nicole"  
-[8] "Laurent" "Jasmin"  "Jason"   "Mickey"  
-
-[1] "Enero"      "Febrero"    "Marzo"      "Abril"      "Mayo"        
-[6] "Julio"      "Agosto"     "Septiembre" "Octubre"    "Noviembre"   
-[11] "Diciembre"  
+[1] "Hugo"      "Paco"      "Luis"      "Petra"     "Maria"     "Fulano"  
+[7] "Sutano"    "Perengano" "Metano"    "Etano"     "Propano"  
+ 
+[1] "Dic" "Feb" "Oct" "Mar" "Feb" "Nov" "Abr" "Dic" "Feb" "Oct" "Dic"  
 
 Si se quiere imprimir el nombre de la persona 7 con su mes de nacimiento se puede hacer con:  
 
 ```R
-print(persona[7]); print(meses_nacimiento[7])
+print(persona[7]); print(mes_nacimiento[7])
 ```
 Sol:  
-[1] "Nicole"  
-[1] "Agosto"  
+[1] "Sutano"  
+[1] "Abr"  
 
 También, podemos imprimir de la siguiente manera:  
 
@@ -31,15 +30,15 @@ También, podemos imprimir de la siguiente manera:
 print(c(persona[7], meses_nacimiento[7]))
 ```
 Sol:  
-[1] "Nicole" "Agosto"  
+[1] "Sutano" "Abr"  
 
-La función ***paste()*** permite concatenar cadenas de caracteres y por medio de ella se puede dar incluso una mejor apariencia a la salida:  
+La función ***paste()*** permite ***concatenar cadenas de caracteres*** y por medio de ella se puede dar incluso una mejor apariencia a la salida:  
 
 ```R
 print(paste(persona[7], "nacio en el mes de", meses_nacimiento[7]))
 ```
 Sol:  
-"Nicole nacio en el mes de Agosto"  
+[1] "Sutano nacio en el mes de Abr"  
 
 ### Los factores y sus estructuras.
 Los dos vectores anteriores pueden considerarse como una estructura de información, a la que se puede someter a algún tipo de procesamiento estadístico. Consideremos el problema de determinar la frecuencia de aparición de ciertos meses en el vector ***meses_nacimiento***. En este caso, el lenguaje provee de una clase que facilita este tipo de análisis, a saber: ***la clase factor***. Procedemos primero a transformar el vector meses_nacimiento a un ***factor***, mediante la función de conversión ***as.factor()***, como sigue:  
