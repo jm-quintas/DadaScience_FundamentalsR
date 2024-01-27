@@ -112,3 +112,5 @@ mes_nacimiento
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
 | fila1| Abr | Dic | Feb | Mar | Nov | Oct |  
 | fila2 | 1 | 3 | 3 | 1 | 1 | 2 |  
+
+La razón es simple: el intérprete del lenguaje sabe que la función está esperando recibir un factor y en consecuencia trata de convertir, en automático, el argumento que recibe, a esa clase. Como la conversión de vectores de caracteres a factores es trivial, la función no tiene ningún problema en desarrollar su tarea.  
