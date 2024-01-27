@@ -16,4 +16,21 @@ Sol:
 [6] "Julio"      "Agosto"     "Septiembre" "Octubre"    "Noviembre"   
 [11] "Diciembre"  
 
+Si se quiere imprimir el nombre de la persona 7 con su mes de nacimiento se puede hacer con:  
+
+```R
+print(persona[7]); print(meses_nacimiento[7])
+```
+Sol:  
+[1] "Nicole"  
+[1] "Agosto"  
+
+También, podemos imprimir de la siguiente manera:  
+
+```R
+print(c(persona[7], meses_nacimiento[7]))
+```
+Sol:  
+[1] "Nicole" "Agosto"  
+
 
