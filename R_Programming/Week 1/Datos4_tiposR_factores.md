@@ -27,7 +27,7 @@ Sol:
 También, podemos imprimir de la siguiente manera:  
 
 ```R
-print(c(persona[7], meses_nacimiento[7]))
+print(c(persona[7], mes_nacimiento[7]))
 ```
 Sol:  
 [1] "Sutano" "Abr"  
