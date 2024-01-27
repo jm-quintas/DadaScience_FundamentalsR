@@ -100,3 +100,15 @@ ffmeses_nacimiento
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
 | fila1| Ene | Feb | Mar | Abr | May | Jun | Jul | Ago | Sep | Oct | Nov | Dic |  
 | fila2 | 0 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 1 | 3 |  
+
+Debe notarse que la función ***table()*** pudiera haber recibido como argumento directamente el vector de caracteres original, y hubiera producido el resultado deseado, como se muestra:  
+
+```R
+table(mes_nacimiento)
+```
+Sol:  
+mes_nacimiento  
+| _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 |  
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
+| fila1| Abr | Dic | Feb | Mar | Nov | Oct |  
+| fila2 | 1 | 3 | 3 | 1 | 1 | 2 |  
