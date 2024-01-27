@@ -78,6 +78,6 @@ fmeses_nacimiento
 | _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 | Col7 | Col8 | Col9 | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | fila1| Agosto | Diciembre | Enero | Febrero | Julio | Marzo | Noviembre | Octubre | Septiembre |
-| fila2 | 1 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 1 |    
+| fila2 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 1 | 1 |    
       
         
