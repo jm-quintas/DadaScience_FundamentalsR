@@ -4,7 +4,7 @@ Las ***cadenas de caracteres se utilizan para nombrar cosas u objetos*** del mun
 
 ```R
 persona <- c("Hugo", "Paco", "Luis", "Jose", "Kavin", "Melissa", "Nicole", "Laurent", "Jasmin", "Jason", "Mickey")
-meses_nacimiento = c("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
+meses_nacimiento <- c("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
 
 print(persona); print(meses_nacimiento)
 ```
