@@ -81,23 +81,22 @@ Fmes_nacimiento
 La creación de factores en los que se establezca un orden determinado en los niveles, se puede hacer con la función ***factor()***:  
 
 ```R
-meses <- c("Enero", "Febrero", "Marzo", "Abril", "Mayo","Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
-ffmeses_nacimiento <- factor(meses_nacimiento, levels = meses)
-print(ffmeses_nacimiento)
+meses <- c("Ene", "Feb", "Mar", "Abr", "May","Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic")
+FFmes_nacimiento <- factor(mes_nacimiento, levels = meses)
+print(FFmes_nacimiento)
 ```
 Sol:  
-[1] Enero      Febrero    Marzo      Abril      Febrero    Julio       
-[7] Agosto     Septiembre Octubre    Noviembre  Diciembre   
-12 Levels: Enero Febrero Marzo Abril Mayo Junio Julio Agosto ... Diciembre  
+[1] Dic Feb Oct Mar Feb Nov Abr Dic Feb Oct Dic  
+Levels: Ene Feb Mar Abr May Jun Jul Ago Sep Oct Nov Dic  
 
 Ahora la tabla de frecuencia es:  
 
 ```R
-table(ffmeses_nacimiento)
+table(FFmeS_nacimiento)
 ```
 Sol:  
 ffmeses_nacimiento
-| _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 | Col7 | Col8 | Col9 | Col10 | Col11 | Col12 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| fila1| Enero | Febrero | Marzo | Abril | Mayo | Junio | Julio | Agosto | Septiembre | Octubre | Noviembre | Diciembre |
-| fila2 | 1 | 2 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |   
+| _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 | Col7 | Col8 | Col9 | Col10 | Col11 | Col12 |  
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
+| fila1| Ene | Feb | Mar | Abr | May | Jun | Jul | Ago | Sep | Oct | Nov | Dic |  
+| fila2 | 0 | 3 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 1 | 3 |  
