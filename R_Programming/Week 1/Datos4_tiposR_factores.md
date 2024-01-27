@@ -69,14 +69,14 @@ Como se puede ver, el núcleo de la clase son dos vectores. El primero, es un ve
 La función ***table()*** toma típicamente como argumento un factor y regresa como resultado justamente la frecuencia de aparición de los niveles en el vector de índices:  
 
 ```R
-table(fmeses_nacimiento)
+table(Fmes_nacimiento)
 ```
 Sol:  
-fmeses_nacimiento  
-| _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 | Col7 | Col8 | Col9 | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| fila1| Agosto | Diciembre | Enero | Febrero | Julio | Marzo | Noviembre | Octubre | Septiembre |
-| fila2 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 1 | 1 |    
+Fmes_nacimiento  
+| _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 |  
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
+| fila1| Abr | Dic | Feb | Mar | Nov | Oct |  
+| fila2 | 1 | 3 | 3 | 1 | 1 | 2 |  
       
 La creación de factores en los que se establezca un orden determinado en los niveles, se puede hacer con la función ***factor()***:  
 
