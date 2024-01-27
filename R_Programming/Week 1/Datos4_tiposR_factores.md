@@ -80,4 +80,14 @@ fmeses_nacimiento
 | fila1| Agosto | Diciembre | Enero | Febrero | Julio | Marzo | Noviembre | Octubre | Septiembre |
 | fila2 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 1 | 1 |    
       
-        
+La creación de factores en los que se establezca un orden determinado en los niveles, se puede hacer con la función ***factor()***:  
+
+```R
+meses <- c("Enero", "Febrero", "Marzo", "Abril", "Mayo","Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")
+ffmeses_nacimiento <- factor(meses_nacimiento, levels = meses)
+print(ffmeses_nacimiento)
+```
+Sol:  
+[1] Enero      Febrero    Marzo      Abril      Febrero    Julio       
+[7] Agosto     Septiembre Octubre    Noviembre  Diciembre   
+12 Levels: Enero Febrero Marzo Abril Mayo Junio Julio Agosto ... Diciembre  
