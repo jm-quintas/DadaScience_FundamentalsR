@@ -35,7 +35,7 @@ Sol:
 La función ***paste()*** permite ***concatenar cadenas de caracteres*** y por medio de ella se puede dar incluso una mejor apariencia a la salida:  
 
 ```R
-print(paste(persona[7], "nacio en el mes de", meses_nacimiento[7]))
+print(paste(persona[7], "nacio en el mes de", mes_nacimiento[7]))
 ```
 Sol:  
 [1] "Sutano nacio en el mes de Abr"  
