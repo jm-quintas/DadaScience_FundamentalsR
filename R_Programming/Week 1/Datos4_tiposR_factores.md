@@ -75,7 +75,8 @@ table(fmeses_nacimiento)
 ```
 Sol:  
 fmeses_nacimiento  
-     Abril     Agosto  Diciembre      Enero    Febrero      Julio      Marzo   
-         1          1          1          1          2          1          1   
-     Noviembre    Octubre Septiembre   
-         1          1          1  
+     | Abril | Agosto | Diciembre | Enero | Febrero | Julio | Marzo | Noviembre | Octubre | Septiembre | 
+     | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+     | 1 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 | 1 |    
+      
+        
