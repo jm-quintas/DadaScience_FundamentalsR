@@ -92,7 +92,7 @@ Levels: Ene Feb Mar Abr May Jun Jul Ago Sep Oct Nov Dic
 Ahora la tabla de frecuencia es:  
 
 ```R
-table(FFmeS_nacimiento)
+table(FFmes_nacimiento)
 ```
 Sol:  
 ffmeses_nacimiento
