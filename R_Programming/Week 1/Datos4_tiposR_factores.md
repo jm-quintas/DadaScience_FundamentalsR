@@ -91,3 +91,15 @@ Sol:
 [1] Enero      Febrero    Marzo      Abril      Febrero    Julio       
 [7] Agosto     Septiembre Octubre    Noviembre  Diciembre   
 12 Levels: Enero Febrero Marzo Abril Mayo Junio Julio Agosto ... Diciembre  
+
+Ahora la tabla de frecuencia es:  
+
+```R
+table(ffmeses_nacimiento)
+```
+Sol:  
+ffmeses_nacimiento
+| _____ | Col1 | Col2 | Col3 | Col4 | Col5 | Col6 | Col7 | Col8 | Col9 | Col10 | Col11 | Col12 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| fila1| Enero | Febrero | Marzo | Abril | Mayo | Junio | Julio | Agosto | Septiembre | Octubre | Noviembre | Diciembre |
+| fila2 | 1 | 2 | 1 | 1 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |   
