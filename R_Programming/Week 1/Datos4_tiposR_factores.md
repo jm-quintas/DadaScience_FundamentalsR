@@ -3,7 +3,7 @@
 Las ***cadenas de caracteres se utilizan para nombrar cosas u objetos*** del mundo. Igual que en el caso de los números, en R la ***clase character*** no se refiere a una cadena de caracteres aislada sino a un vector que contiene cero o más cadenas de caracteres.  
 
 ```R
- persona <- c("Hugo", "Paco", "Luis", "Petra", "Maria", "Fulano", "Sutano", "Perengano", "Metano", "Etano", "Propano")
+persona <- c("Hugo", "Paco", "Luis", "Petra", "Maria", "Fulano", "Sutano", "Perengano", "Metano", "Etano", "Propano")
 
 mes_nacimiento <- c("Dic", "Feb", "Oct", "Mar", "Feb", "Nov", "Abr", "Dic", "Feb", "Oct", "Dic")
 
