@@ -396,7 +396,7 @@ Sol:
 [1] 0.5000000 0.7071068 0.8660254  
 
 
-Proyecto 1 (Libro: El arte de programar en R):
+## Proyecto 1 (Libro: El arte de programar en R):
 De un edificio, a una ***altura de 15 m***, se ha lanzado con un ***ángulo de 50 grados***, un proyectil a una ***velocidad de 7 m/s***. ¿Cuáles serán las ***alturas (coordenadas y)*** del proyectil a cada ***0.5 m de distancia horizontal*** desde donde se lanzó y ***hasta los 11 m***?  
 
 Las ecuaciones que gobiernan este fenómeno son las siguientes:  
