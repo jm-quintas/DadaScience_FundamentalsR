@@ -90,3 +90,5 @@ Sol:
 ```
 Sol:  
 [1] "Maria Candelaria"  
+
+En el último caso, el operador ha recibido como argumento la función ***paste()***, que sirve para concatenar cadenas de caracteres. Esta función supone de inicio que las cadenas irán separadas por un espacio en blanco. Por ello es que, en el ejemplo se indica que el separador es vacío mediante sep="".  
