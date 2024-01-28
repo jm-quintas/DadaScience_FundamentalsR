@@ -44,4 +44,25 @@ $hijos
 $edades  
 [1] 8 6  
 
+### Acceso a los elementos individuales de una lista.
+Al igual que en el caso de los vectores, las listas no serían de mucha utilidad sin la posibilidad de tener acceso a sus elementos individuales. El lenguaje, provee de este acceso mediante ***tres operadores, a saber: [ ], [[ ]], y $*** (por el momento utilizaremos los dos ultimos operadores). Cuando los elementos de la lista tienen nombre, se puede acceder a ellos con cualquiera de los dos operadores.  
+
+```R
+print(familia$madre)
+```
+Sol:  
+[1] "Maria"  
+
+```R
+print(familia[["madre"]])
+```
+Sol:  
+[1] "Maria"  
+
+```R
+# Acceso de escritura
+print(familia[["padre"]] <- "Juan Pedro")
+```
+Sol:  
+[1] "Juan Pedro"  
 
