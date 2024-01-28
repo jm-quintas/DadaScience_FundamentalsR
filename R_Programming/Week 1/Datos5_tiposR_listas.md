@@ -84,3 +84,9 @@ print(familia[[mm]])
 ```
 Sol:  
 [1] "Maria Candelaria"  
+
+```R
+ print(familia[[paste("ma", "dre", sep="")]])
+```
+Sol:  
+[1] "Maria Candelaria"  
