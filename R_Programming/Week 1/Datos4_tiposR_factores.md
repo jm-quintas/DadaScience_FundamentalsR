@@ -143,3 +143,11 @@ Sol:
 [1] Dic     Febrero Oct     Mar     Febrero Nov     Abr     Dic     Febrero  
 [10] Oct     Dic      
 Levels: Abr Dic Febrero Mar Nov Oct  
+
+Si se quiere tener ***acceso al factor como un vector de índices, se convierte a entero***:  
+
+```R
+print(as.integer(Fmes_nacimiento))
+```
+Sol:  
+[1] 2 3 6 4 3 5 1 2 3 6 2  
