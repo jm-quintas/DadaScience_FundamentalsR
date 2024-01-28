@@ -66,3 +66,12 @@ print(familia[["padre"]] <- "Juan Pedro")
 Sol:  
 [1] "Juan Pedro"  
 
+Otra manera de obtenerlo:
+
+```R
+familia[["padre"]] <- "Juan Pedro"
+print(familia$padre)
+```
+Sol:  
+[1] "Juan Pedro"  
+
