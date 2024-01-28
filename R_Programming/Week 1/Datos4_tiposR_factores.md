@@ -114,3 +114,32 @@ mes_nacimiento
 | fila2 | 1 | 3 | 3 | 1 | 1 | 2 |  
 
 La razón es simple: el intérprete del lenguaje sabe que la función está esperando recibir un factor y en consecuencia trata de convertir, en automático, el argumento que recibe, a esa clase. Como la conversión de vectores de caracteres a factores es trivial, la función no tiene ningún problema en desarrollar su tarea.  
+
+### Acceso a los elementos de un factor.
+El acceso a cada uno de los dos vectores que le dan estructura al factor se hace como se muestra a continuación:  
+
+```R
+print(Fmes_nacimiento[10])
+```
+Sol:  
+[1] Oct  
+Levels: Abr Dic Feb Mar Nov Oct  
+
+Un elemento individual de los niveles:  
+
+```R
+ print(levels(Fmes_nacimiento)[3])
+```
+Sol:  
+[1] "Feb"  
+
+Incluso es posible modificar todos o algunos de los niveles del factor.  
+
+```R
+levels(Fmes_nacimiento)[3] <- "Febrero"
+print(Fmes_nacimiento)
+```
+Sol:  
+[1] Dic     Febrero Oct     Mar     Febrero Nov     Abr     Dic     Febrero  
+[10] Oct     Dic      
+Levels: Abr Dic Febrero Mar Nov Oct  
