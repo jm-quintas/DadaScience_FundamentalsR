@@ -75,3 +75,12 @@ print(familia$padre)
 Sol:  
 [1] "Juan Pedro"  
 
+Nótese que al emplear el ***operador $***, no se han usado las comillas para mencionar el nombre del elemento, pero, este operador también admite nombres con comillas. Por otra parte, el ***operador [[ ]]***, sólo admite los nombres de elementos con comillas, o de cualquier expresión que al evaluarse dé como resultado una cadena de caracteres.  
+
+```R
+familia$"madre" <- "Maria Candelaria"
+mm <- "madre"
+print(familia[[mm]])
+```
+Sol:  
+[1] "Maria Candelaria"  
